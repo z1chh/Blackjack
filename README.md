@@ -19,6 +19,7 @@
 ## Classes
 # Card
 Represents a card, with a rank and suit enums
+
 Methods:
 * getValue: return the numerical value of the card
 * displayCard: outputs to the screen the card information
