@@ -1,4 +1,4 @@
-### Blackjack
+# Blackjack
 ## Card values
 1. Numbered cards are counted at their face value (two counts as 2 points, three, 3 points, and so on)
 2. An Ace count as either 1 point or 11 points (whichever suits the player best)
@@ -17,14 +17,14 @@
 * If the two totals are the same, no one wins the round (technically called a push).
 
 ## Classes
-# Card
+### Card
 Represents a card, with a rank and suit enums
 
 Methods:
 * getValue: returns the numerical value of the card
 * displayCard: outputs to the screen the card information
 
-# Hand
+### Hand
 Represents the set of cards that a player holds (up to 12 cards)
 
 Methods:
@@ -32,7 +32,7 @@ Methods:
 * clear: clears all cards in the hand
 * getTotal: returns the sum of the cards' numerical values
 
-# Deck
+### Deck
 Represents a standard deck of 52 cards
 
 Methods:
@@ -40,27 +40,27 @@ Methods:
 * shuffle: shuffles the cards in the deck
 * deal: deals a card to one hand
 
-# AbstractPlayer
+### AbstractPlayer
 Represents a generic abstract player (human or computer)
 
 Methods:
 * isDrawing: returns whether the player wants to draw a card or not
 * isBusted: returns whether the player busted or not (exceeded 21)
 * 
-# HumanPlayer
+### HumanPlayer
 Represents a human player (concrete implementation of AbstractPlayer)
 
 Methods:
 * isDrawing: returns whether the player wants to draw a card or not
 * announce: prints information about whether the player won, lost, or had a push situation
 * 
-# ComputerPlayer
+### ComputerPlayer
 Represents a computer player (concrete implementation of AbstractPlayer)
 
 Method:
 * isDrawing: returns whether the player wants to draw a card or not
 
-# BlackJackGame
+### BlackJackGame
 Represents the overall game of Blackjack
 
 Fields:
