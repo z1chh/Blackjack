@@ -189,11 +189,11 @@ int Card::getValue()
         // The Hand::getTotal() method will automitically set its value to 1 if the Hand busted.
         return 11;
     }
-    else if (this->aRank >= 2 && this->aRank <= 9)
+    else if (this->aRank >= 2 && this->aRank <= 9) // For standard ranks, we set it to the current value
     {
         return this->aRank;
     }
-    else // For other ranks, we set it to the current value
+    else // this->aRank == 10, 11, 12, or 13 -> all worth 10 points in Blackjack
     {
         return 10;
     }
