@@ -419,18 +419,10 @@ void Hand::add(Card *pCard)
 void Hand::clear()
 {
     // Set every pointer to a nullptr.
-    this->aListOfCards[0] = nullptr;
-    this->aListOfCards[1] = nullptr;
-    this->aListOfCards[2] = nullptr;
-    this->aListOfCards[3] = nullptr;
-    this->aListOfCards[4] = nullptr;
-    this->aListOfCards[5] = nullptr;
-    this->aListOfCards[6] = nullptr;
-    this->aListOfCards[7] = nullptr;
-    this->aListOfCards[8] = nullptr;
-    this->aListOfCards[9] = nullptr;
-    this->aListOfCards[10] = nullptr;
-    this->aListOfCards[11] = nullptr;
+    for (int i = 0; i < 12; i++)
+    {
+        this->aListOfCards[i] = nullptr;
+    }
 
     // Set the number of Cards in the Hand to 0.
     this->numCards = 0;
