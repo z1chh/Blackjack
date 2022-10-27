@@ -1093,6 +1093,6 @@ int main()
         // cout << endl << endl;
         playAgain = (answer == 'y' ? true : false);
     }
-    cout << "Gave over!";
+    cout << "Game over!";
     return 0;
 }
